@@ -1,0 +1,40 @@
+### Java ###
+*.class
+*.log
+*.ctxt
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+### Maven ###
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+# 即使是多模块，也要忽略所有子目录下的 target
+**/target/
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+gen/
+# 忽略 IDEA 产生的本地配置文件
+.idea/workspace.xml
+.idea/usage.xml
+.idea/dictionaries
+.idea/shelf
+
+### Windows / Mac OS ###
+Thumbs.db
+.DS_Store

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.campusaudit.mapper.DisputeTicketsMapper">
+
+    <resultMap id="BaseResultMap" type="org.example.campusaudit.entity.DisputeTickets">
+            <id property="ticketId" column="ticket_id" />
+            <result property="claimId" column="claim_id" />
+            <result property="initiatorId" column="initiator_id" />
+            <result property="reason" column="reason" />
+            <result property="evidenceData" column="evidence_data" />
+            <result property="status" column="status" />
+            <result property="rulingResult" column="ruling_result" />
+            <result property="deadline" column="deadline" />
+            <result property="createTime" column="create_time" />
+            <result property="updateTime" column="update_time" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        ticket_id,claim_id,initiator_id,reason,evidence_data,status,
+        ruling_result,deadline,create_time,update_time
+    </sql>
+</mapper>

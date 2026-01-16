@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.campusclaim.mapper.ClaimsMapper">
+
+    <resultMap id="BaseResultMap" type="org.example.campusclaim.entity.Claims">
+            <id property="claimId" column="claim_id" />
+            <result property="itemId" column="item_id" />
+            <result property="applicantId" column="applicant_id" />
+            <result property="status" column="status" />
+            <result property="applyMessage" column="apply_message" />
+            <result property="verifyAnswer" column="verify_answer" />
+            <result property="rejectReply" column="reject_reply" />
+            <result property="finderConfirm" column="finder_confirm" />
+            <result property="ownerConfirm" column="owner_confirm" />
+            <result property="createTime" column="create_time" />
+            <result property="updateTime" column="update_time" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        claim_id,item_id,applicant_id,status,apply_message,verify_answer,
+        reject_reply,finder_confirm,owner_confirm,create_time,update_time
+    </sql>
+</mapper>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.campusaudit.mapper.UsersMapper">
+
+    <resultMap id="BaseResultMap" type="org.example.campusaudit.entity.Users">
+            <id property="userId" column="user_id" />
+            <result property="openId" column="open_id" />
+            <result property="studentId" column="student_id" />
+            <result property="realName" column="real_name" />
+            <result property="nickname" column="nickname" />
+            <result property="avatarUrl" column="avatar_url" />
+            <result property="email" column="email" />
+            <result property="isCertified" column="is_certified" />
+            <result property="roleType" column="role_type" />
+            <result property="accountStatus" column="account_status" />
+            <result property="unfreezeTime" column="unfreeze_time" />
+            <result property="coinBalance" column="coin_balance" />
+            <result property="frozenBalance" column="frozen_balance" />
+            <result property="createTime" column="create_time" />
+            <result property="updateTime" column="update_time" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        user_id,open_id,student_id,real_name,nickname,avatar_url,
+        email,is_certified,role_type,account_status,unfreeze_time,
+        coin_balance,frozen_balance,create_time,update_time
+    </sql>
+</mapper>
